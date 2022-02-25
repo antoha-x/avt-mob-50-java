@@ -26,6 +26,7 @@ public class MainClassTest {
                 String.format(expectedValueTest3, firstLetterTest3.toUpperCase()) +
                 ", " +
                 String.format(expectedValueTest3, firstLetterTest3);
+
         Assert.assertTrue(errorMessage,
                 mc.getClassString().contains(String.format(expectedValueTest3, firstLetterTest3.toUpperCase())) ||
                         mc.getClassString().contains(String.format(expectedValueTest3, firstLetterTest3)));
