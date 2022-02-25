@@ -1,5 +1,5 @@
 public class MainClass {
-    public static int getLocalNumber() {
+    public int getLocalNumber() {
         return 14;
     }
 }
