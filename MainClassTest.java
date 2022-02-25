@@ -22,11 +22,10 @@ public class MainClassTest {
 
     @Test
     public void testGetClassString() {
-        String errorMessage = "getClassString does not contain the substring '" +
+        String errorMessage = "getClassString does not contain the substring: " +
                 String.format(expectedValueTest3, firstLetterTest3.toUpperCase()) +
-                "' or '" +
-                String.format(expectedValueTest3, firstLetterTest3) +
-                "'";
+                ", " +
+                String.format(expectedValueTest3, firstLetterTest3);
         Assert.assertTrue(errorMessage,
                 mc.getClassString().contains(String.format(expectedValueTest3, firstLetterTest3.toUpperCase())) ||
                         mc.getClassString().contains(String.format(expectedValueTest3, firstLetterTest3)));
