@@ -6,6 +6,6 @@ public class MainClassTest {
 
     @Test
     public void testGetLocalNumber() {
-        Assert.assertEquals("getLocalNumber return not 14",MainClass.getLocalNumber(), expectedValue);
+        Assert.assertEquals("getLocalNumber return not 14", MainClass.getLocalNumber(), expectedValue);
     }
 }
