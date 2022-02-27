@@ -22,13 +22,16 @@ public class MainClassTest {
 
     @Test
     public void testGetClassString() {
+        String smallLetter = String.format(expectedValueTest3, firstLetterTest3);
+        String bigLetter = String.format(expectedValueTest3, firstLetterTest3.toUpperCase());
+
         String errorMessage = "getClassString does not contain the substring: " +
                 String.format(expectedValueTest3, firstLetterTest3.toUpperCase()) +
                 ", " +
                 String.format(expectedValueTest3, firstLetterTest3);
 
         Assert.assertTrue(errorMessage,
-                mc.getClassString().contains(String.format(expectedValueTest3, firstLetterTest3.toUpperCase())) ||
-                        mc.getClassString().contains(String.format(expectedValueTest3, firstLetterTest3)));
+                mc.getClassString().contains(bigLetter) ||
+                        mc.getClassString().contains(smallLetter));
     }
 }
