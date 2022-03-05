@@ -16,3 +16,7 @@ buildNumber.properties
 # Test Report
 report/
 allure-report/
+/out/
+/avt-mob-50-java.iml
+/libs/
+/apks/
